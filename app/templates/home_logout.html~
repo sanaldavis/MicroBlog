@@ -1,0 +1,17 @@
+{% extends "base_post.html" %}
+{% block content %}
+	<h1> Welcome to my blog
+	</h1>
+{% for post in post %}
+	<h2>
+	Details are
+	</h2> 
+	<h3>
+	{{post.id}}<br>
+	{{post.author}}<br>
+	{{post.post}}<br>
+	{{post.day}}<br>
+	{{post.time}}<br>
+{% endfor%}
+{% endblock %}
+
